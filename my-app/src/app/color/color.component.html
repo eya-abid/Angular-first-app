@@ -1,0 +1,5 @@
+<app-child (sendRequestToData)="processReg($event)" [childProperty] = "color"></app-child>
+<div [style.background-color] = "color" >Color</div>
+<input [(ngModel)] = "color" type="text" class="form-control">
+
+le contenu de la propriété color est {{color}}
